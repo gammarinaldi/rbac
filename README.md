@@ -10,12 +10,14 @@ This is a simple implementation of Role-Based Access Control (RBAC) using Flask.
 - **Role-Based Middleware**: Ensures only users with the correct role can access certain routes.
 
 ## Project Structure
+```bash
 rbac_app/
 │
 ├── app.py          # Main Flask application
 ├── models.py       # Database models (Users, Roles, UserRoles)
 ├── db.sqlite3      # SQLite database
 └── requirements.txt  # Dependencies
+```
 
 
 ## Requirements
