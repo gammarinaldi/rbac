@@ -1,5 +1,5 @@
-from flask import Flask, jsonify, request, abort
-from models import db, User, Role, create_tables
+from flask import Flask, jsonify, request
+from models import db, User, Role
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
