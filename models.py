@@ -14,8 +14,3 @@ class Role(db.Model):
     name = db.Column(db.String(50), nullable=False, unique=True)
     users = db.relationship('User', backref='role', lazy=True)
 
-# Create the tables in the database
-def create_tables(app):
-    with app.app_context():
-        db.create_all()
-
